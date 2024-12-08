@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bg"
+    tools:context=".QuizQuestions">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="this is a question" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="229dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="This is a Image"
+            tools:src="@drawable/mastercard" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            >
+
+
+            <ProgressBar
+                android:id="@+id/progessBar"
+                android:layout_width="0dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="#673AB7"
+                android:max="10"
+                android:indeterminate="false"
+                android:minHeight="50dp"
+                android:progress="0"
+                tools:ignore="Suspicious0dp" />
+
+
+            <TextView
+                android:id="@+id/progess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:padding="15dp"
+                android:textSize="14sp"
+                tools:text="0/10" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_border_bg"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/option"
+            android:textSize="18sp"
+            tools:text="Master Card" />
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_border_bg"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/option"
+            android:textSize="18sp"
+            tools:text="Master Card" />
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_border_bg"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/option"
+            android:textSize="18sp"
+            tools:text="Master Card" />
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_border_bg"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/option"
+            android:textSize="18sp"
+            tools:text="Master Card" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_bg"
+            android:fontFamily="@font/alata"
+            android:letterSpacing="0.2"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+  </ScrollView>
